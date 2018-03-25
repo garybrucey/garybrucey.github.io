@@ -8,31 +8,85 @@
 
 <h2>This is the South Coast - it probably looks like shit:</h2>
 <table cellpadding="2" cellspacing="2">
-        <tr>
-          <td>
-            <img src="http://code.divshot.com/geo-bootstrap/img/test/ie_logo.gif">
-          </td>
-          <td>
-            <img src="http://code.divshot.com/geo-bootstrap/img/test/ns_logo.gif">
-          </td>
-          <td>
-            <img src="http://code.divshot.com/geo-bootstrap/img/test/noframes.gif">
-          </td>
-          <td>
-            <img src="http://code.divshot.com/geo-bootstrap/img/test/notepad.gif">
-          </td>
-        </tr>
-      </table>
+  <tr>
+    <td>
+      <img src="http://code.divshot.com/geo-bootstrap/img/test/ie_logo.gif">
+    </td>
+    <td>
+      <img src="http://code.divshot.com/geo-bootstrap/img/test/ns_logo.gif">
+    </td>
+    <td>
+      <img src="http://code.divshot.com/geo-bootstrap/img/test/noframes.gif">
+    </td>
+    <td>
+      <img src="http://code.divshot.com/geo-bootstrap/img/test/notepad.gif">
+    </td>
+  </tr>
+</table>
 
-    <center>
-        <!-- TRIPLE MC HAMMER -->
-        <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">&nbsp;&nbsp;
-        <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">&nbsp;&nbsp;
-        <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
-    </center>
+<center>
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">&nbsp;&nbsp;
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">&nbsp;&nbsp;
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
+</center>
+
+<center>
+    <h2 style="font-size: 20px; margin: 20px auto;">Vis Estimate:</h2>
+    <h2 style="font-size: 150px; margin: 100px auto; margin-top: 50px;" id="vis_estimate">Cant Find..</h2>
+</center>
+
+
+    
 <iframe style="display:block; margin:20px auto;" id="iframewindow" src="https://encounter.snapithd.com/current/player.php?t=t&amp;w=c62004761cw72&amp;width=640&amp;height=480" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
-
 <h2 style="display:block; margin:20px auto;">Kill time till it looks less shit</h2>
 <iframe style="display:block; margin:20px auto;" width="650" height="350" src="https://www.freeriderhd.com/game/517429-costa-concordia-ft-eli?embedded=true" frameborder="0" allowfullscreen style="border: 1px solid #000;" scrolling="no"></iframe>
+
+<!-- Epic Javascript Coding HERE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!-- Get FB posts-->
+  <script type="text/javascript">
+  
+    $(function(){
+    
+      var url = 'IslandBayDivers';
+      var at = 'access_token=EAACEdEose0cBAMtdJRkznfYoiqtEhnI7Brb02yJ3C5PrZATAtaP30ZAP61avjLjZBQZCHSE6xbShQyQV0TGZAZC9F7UF8XaZB2pk8a3Fhn52ikzB9K4AOqgI5y7pXVVKPBITEJMRgLgBTCazufBp1I1fnptNnZCSqvw8Q9uDoNyP7ufTwC4NI0FB9WvVjV8OnT8ZD'
+      var apiUrl = 'https://graph.facebook.com/'+url+'/feed?'+at;
+      
+      $.ajax({url: apiUrl, success: function(result){
+        
+        // Each message
+        $.each( result, function( key, messages ) {
+          last_message_obj = messages[0]
+          
+          // Latest message
+          if (last_message_obj != undefined){
+            last_message = last_message_obj['message']
+            console.log(last_message)
+            
+            vis = last_message.split('viz estimate')[1].split(',high tide at')[0].split("'")[1]
+
+            console.log(vis)
+
+            // update HTML
+            $("#vis_estimate").html(vis);
+          }
+        });
+              
+      }});
+    
+    });
+    
+  </script>
+
+  <!-- Something else -->
+  <script type="text/javascript">  
+
+    $(function(){
+      // Do stuff
+    });
+
+  </script>
+
 </body>
 </html>
