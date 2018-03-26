@@ -36,7 +36,7 @@
         <h2 style="font-size: 20px; margin: 40px auto;" id="vis_estimate_title">Vis Estimate:</h2>
         <img style="width: 30%; margin: 20px" src="https://otterlover58.files.wordpress.com/2016/06/dialup2.gif" id="loading">
     </center>
-    
+
 <table class="table table-bordered">
     <tr>
         <td>
@@ -53,9 +53,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td id="sea_temperature">
                         SEA TEMPERATURE<br/>
-                        <object type="text/html" data="https://www.seatemperature.org/australia-pacific/new-zealand/wellington.htm#sea-temperature" style="overflow:hidden">
+                        Probably fucking cold.
                         </object>
                     </td>
                 </tr>
@@ -107,17 +107,17 @@
 </table>
 
 
-    
+
 <iframe style="display:block; margin:20px auto;" id="iframewindow" src="https://encounter.snapithd.com/current/player.php?t=t&amp;w=c62004761cw72&amp;width=640&amp;height=480" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
 <!-- <h2 style="display:block; margin:20px auto;">Kill time till it looks less shit</h2>
 <iframe style="display:block; margin:20px auto;" width="650" height="350" src="https://www.freeriderhd.com/game/517429-costa-concordia-ft-eli?embedded=true" frameborder="0" allowfullscreen style="border: 1px solid #000;" scrolling="no"></iframe> -->
 
 <!-- Epic Javascript Coding HERE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+
   <!-- Get FB posts-->
   <script type="text/javascript">
-  
+
     $(function(){
 
         $.ajax({
@@ -126,7 +126,7 @@
             data: {
                 "wrapAPIKey": "d9mCuhjIcyt2ThLiEj76EOR6CcOpS5cV"
             }
-            }).done(function(data) {                
+            }).done(function(data) {
                 var messages = data.data.output
 
                 report = []
@@ -140,12 +140,12 @@
 
                         daily_report = {date:date, vis:vis};
                         report.push(daily_report)
-                    }                    
+                    }
                 });
 
                 console.log(report)
                 last_report = report[0]
-                
+
                 // update HTML
                 $("#vis_estimate_title").html(last_report.date);
 
@@ -155,16 +155,16 @@
                     $(this).replaceWith(vis_estimate)
                 });
 
-        });       
+        });
     });
-    
+
   </script>
 
-    <script type="text/javascript">  
+    <script type="text/javascript">
 
         $(function(){
             // Do stuff
-            $('#notepad').click(function (){                
+            $('#notepad').click(function (){
                 $("#style").attr('href','');
             });
             $('#retro').click(function (){
@@ -178,12 +178,30 @@
 
     </script>
 
+    <script type="text/javascript">
+        $(function(){
+            $.ajax({
+              url: "https://wrapapi.com/use/garybrucey/diving/sea_temperature/0.0.1",
+              method: "POST",
+              data: {
+                "wrapAPIKey": "jk4bkNUHxgKrjQ9PCDqhumUD7xblvx7i"
+              }
+            }).done(function(data) {
+                var messages = data.data.output;
+
+                console.log(messages);
+                // update HTML
+                $("#sea_temperature").html(messages);
+            });
+        });
+    </script>
+
 
   <!-- Something else -->
-  <script type="text/javascript">  
+  <script type="text/javascript">
 
     $(function(){
-        
+
     });
 
   </script>
