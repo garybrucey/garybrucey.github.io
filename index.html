@@ -32,7 +32,7 @@
     </center>
 
     <center>
-        <h2 style="font-size: 20px; margin: 20px auto;">Vis Estimate:</h2>
+        <h2 style="font-size: 20px; margin: 40px auto;" id="vis_estimate_title">Vis Estimate:</h2>
         <h2 style="font-size: 150px; margin: 100px auto; margin-top: 50px;" id="vis_estimate">Cant Find..</h2>
     </center>
     
@@ -118,33 +118,41 @@
   <script type="text/javascript">
   
     $(function(){
-    
-      var url = 'IslandBayDivers';
-      var at = 'access_token=EAACEdEose0cBAMtdJRkznfYoiqtEhnI7Brb02yJ3C5PrZATAtaP30ZAP61avjLjZBQZCHSE6xbShQyQV0TGZAZC9F7UF8XaZB2pk8a3Fhn52ikzB9K4AOqgI5y7pXVVKPBITEJMRgLgBTCazufBp1I1fnptNnZCSqvw8Q9uDoNyP7ufTwC4NI0FB9WvVjV8OnT8ZD'
-      var apiUrl = 'https://graph.facebook.com/'+url+'/feed?'+at;
-      
-      $.ajax({url: apiUrl, success: function(result){
-        
-        // Each message
-        $.each( result, function( key, messages ) {
-          last_message_obj = messages[0]
-          
-          // Latest message
-          if (last_message_obj != undefined){
-            last_message = last_message_obj['message']
-            console.log(last_message)
-            
-            vis = last_message.split('viz estimate')[1].split(',high tide at')[0].split("'")[1]
 
-            console.log(vis)
+        $.ajax({
+            url: "https://wrapapi.com/use/nickazg/divers/divers/0.0.1",
+            method: "POST",
+            data: {
+                "wrapAPIKey": "d9mCuhjIcyt2ThLiEj76EOR6CcOpS5cV"
+            }
+            }).done(function(data) {                
+                var messages = data.data.output
 
-            // update HTML
-            $("#vis_estimate").html(vis);
-          }
-        });
-              
-      }});
-    
+                report = []
+
+                messages.forEach(function(message) {
+
+                    if (message.includes("Conditions at Island Bay")){
+                        console.log(message);
+                        date = message.split(' Currently:')[0].split('... at ')[1]
+                        vis = message.split('viz estimate')[1].split(',high tide at')[0].split("'")[1]
+                        console.log(date);
+                        console.log(vis);
+
+                        daily_report = {date:date, vis:vis};
+                        report.push(daily_report)
+                    }                    
+                });
+
+                console.log(report)
+                last_report = report[0]
+                
+                // update HTML
+                $("#vis_estimate").html(last_report.vis);
+                $("#vis_estimate_title").html(last_report.date);
+
+
+        });       
     });
     
   </script>
