@@ -2282,7 +2282,7 @@
     *margin-right: .3em;
     line-height: 14px;
     vertical-align: text-top;
-    background-image: url("../img/glyphicons-halflings.png");
+    background-image: url("https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/glyphicons-halflings.png");
     background-position: 14px 14px;
     background-repeat: no-repeat;
   }
@@ -2306,7 +2306,7 @@
   .dropdown-submenu:focus > a > [class^="icon-"],
   .dropdown-submenu:hover > a > [class*=" icon-"],
   .dropdown-submenu:focus > a > [class*=" icon-"] {
-    background-image: url("../img/glyphicons-halflings-white.png");
+    background-image: url("https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/glyphicons-halflings-white.png");
   }
 
   .icon-glass {
@@ -6218,7 +6218,7 @@
   }
 
   .navbar-inner {
-    background: #000000 url('../img/stars.gif') top left;
+    background: #000000 url('https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/stars.gif') top left;
     border-bottom: 1px solid #D4D0C8;
   }
 
@@ -6227,7 +6227,7 @@
   }
 
   .btn-primary {
-    background: #000000 url('../img/rainbow.gif') top left;
+    background: #000000 url('https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/rainbow.gif') top left;
   }
 
   legend {
@@ -6236,7 +6236,7 @@
   }
 
   .control-group.error input {
-    background: #000000 url('../img/flames.gif') 0 -30px repeat-x;
+    background: #000000 url('https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/flames.gif') 0 -30px repeat-x;
   }
 
   .dropdown-menu {
@@ -6299,7 +6299,7 @@
 
   .hero-unit,
   .well {
-    background: #000000 url('../img/stars.gif') top left;
+    background: #000000 url('https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/stars.gif') top left;
   }
 
   .breadcrumb {
@@ -6314,7 +6314,7 @@
   }
 
   .progress .bar {
-    background: #c0c0c0 url('../img/progress.gif') top left repeat-x !important;
+    background: #c0c0c0 url('https://raw.githubusercontent.com/divshot/geo-bootstrap/master/img/progress.gif') top left repeat-x !important;
     border: 1px solid #fff;
     border-top: 1px solid #808080;
     border-left: 1px solid #808080;

@@ -1,12 +1,13 @@
 <html>
     <head>
         <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1">
-        <link href="awesome.css" rel="stylesheet">
+        <link href="awesome.css" rel="stylesheet" id="style">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous" -->
     </head>
 <body>
 
 <h1><blink>I Stole Dave's Cool Diving Site!!! ( ͡° ͜ʖ ͡°)</blink></h1>
-
+<div id="met"></div>
 <table cellpadding="2" cellspacing="2">
         <tr>
           <td>
@@ -33,7 +34,7 @@
 
     <center>
         <h2 style="font-size: 20px; margin: 40px auto;" id="vis_estimate_title">Vis Estimate:</h2>
-        <h2 style="font-size: 150px; margin: 100px auto; margin-top: 50px;" id="vis_estimate">Cant Find..</h2>
+        <img style="width: 30%; margin: 20px" src="https://otterlover58.files.wordpress.com/2016/06/dialup2.gif" id="loading">
     </center>
     
 <table class="table table-bordered">
@@ -108,8 +109,8 @@
 
     
 <iframe style="display:block; margin:20px auto;" id="iframewindow" src="https://encounter.snapithd.com/current/player.php?t=t&amp;w=c62004761cw72&amp;width=640&amp;height=480" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
-<h2 style="display:block; margin:20px auto;">Kill time till it looks less shit</h2>
-<iframe style="display:block; margin:20px auto;" width="650" height="350" src="https://www.freeriderhd.com/game/517429-costa-concordia-ft-eli?embedded=true" frameborder="0" allowfullscreen style="border: 1px solid #000;" scrolling="no"></iframe>
+<!-- <h2 style="display:block; margin:20px auto;">Kill time till it looks less shit</h2>
+<iframe style="display:block; margin:20px auto;" width="650" height="350" src="https://www.freeriderhd.com/game/517429-costa-concordia-ft-eli?embedded=true" frameborder="0" allowfullscreen style="border: 1px solid #000;" scrolling="no"></iframe> -->
 
 <!-- Epic Javascript Coding HERE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -132,12 +133,10 @@
 
                 messages.forEach(function(message) {
 
+                    // Excludes any other posts
                     if (message.includes("Conditions at Island Bay")){
-                        console.log(message);
                         date = message.split(' Currently:')[0].split('... at ')[1]
                         vis = message.split('viz estimate')[1].split(',high tide at')[0].split("'")[1]
-                        console.log(date);
-                        console.log(vis);
 
                         daily_report = {date:date, vis:vis};
                         report.push(daily_report)
@@ -148,20 +147,43 @@
                 last_report = report[0]
                 
                 // update HTML
-                $("#vis_estimate").html(last_report.vis);
                 $("#vis_estimate_title").html(last_report.date);
 
+                // Replaces loading image with Title
+                vis_estimate = '<h2 style="font-size: 150px; margin: 100px auto; margin-top: 50px;" id="vis_estimate">'+last_report.vis+'</h2>'
+                $("#loading").each(function(){
+                    $(this).replaceWith(vis_estimate)
+                });
 
         });       
     });
     
   </script>
 
+    <script type="text/javascript">  
+
+        $(function(){
+            // Do stuff
+            $('#notepad').click(function (){                
+                $("#style").attr('href','');
+            });
+            $('#retro').click(function (){
+                $("#style").attr('href','awesome.css');
+            });
+            $('#ie').click(function (){
+                $("#style").attr('href','awesome.css');
+            });
+
+        });
+
+    </script>
+
+
   <!-- Something else -->
   <script type="text/javascript">  
 
     $(function(){
-      // Do stuff
+        
     });
 
   </script>
