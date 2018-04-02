@@ -5,6 +5,7 @@
         <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous" -->
     </head>
 <body>
+        
 
 <h1><blink>I Stole Dave's Cool Diving Site!!! ( ͡° ͜ʖ ͡°)</blink></h1>
 <div id="met"></div>
@@ -36,6 +37,21 @@
         <h2 style="font-size: 20px; margin: 40px auto;" id="vis_estimate_title">Vis Estimate:</h2>
         <img style="width: 30%; margin: 20px" src="https://otterlover58.files.wordpress.com/2016/06/dialup2.gif" id="loading">
     </center>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+<center>
+    <div class="fotorama" style="width: 40%;">
+        <img src="http://s.fotorama.io/1.jpg">
+        <img src="http://s.fotorama.io/2.jpg">
+        <img src="http://s.fotorama.io/1.jpg">
+        <img src="http://s.fotorama.io/2.jpg">
+        <img src="http://s.fotorama.io/1.jpg">
+        <img src="http://s.fotorama.io/2.jpg">
+    </div>
+</center> -->
     
 <table class="table table-bordered">
     <tr>
@@ -132,12 +148,10 @@
                 report = []
 
                 messages.forEach(function(message) {
-
                     // Excludes any other posts
-                    if (message.includes("Conditions at Island Bay")){
-                        date = message.split(' Currently:')[0].split('... at ')[1]
-                        vis = message.split('viz estimate')[1].split(',high tide at')[0].split("'")[1]
-
+                    if (message.includes("Conditions")){
+                        date = message.split('Currently:')[0].split('... at ')[1]
+                        vis = message.split('estimate')[1].split(',high tide at')[0].split("'")[1]
                         daily_report = {date:date, vis:vis};
                         report.push(daily_report)
                     }                    
@@ -151,9 +165,17 @@
 
                 // Replaces loading image with Title
                 vis_estimate = '<h2 style="font-size: 150px; margin: 100px auto; margin-top: 50px;" id="vis_estimate">'+last_report.vis+'</h2>'
-                $("#loading").each(function(){
-                    $(this).replaceWith(vis_estimate)
-                });
+                
+                if (vis_estimate.includes('good')) {
+                    $("#loading").attr('src', './coollogo.gif');
+                } else {
+                    $("#loading").each(function(){
+                        $(this).replaceWith(vis_estimate)
+                    });
+                }
+                
+
+
 
         });       
     });
@@ -164,26 +186,36 @@
 
         $(function(){
             // Do stuff
-            $('#notepad').click(function (){                
-                $("#style").attr('href','');
-            });
-            $('#retro').click(function (){
-                $("#style").attr('href','awesome.css');
-            });
-            $('#ie').click(function (){
-                $("#style").attr('href','awesome.css');
-            });
+            // $('#notepad').click(function (){                
+            //     $("#style").attr('href','');
+            // });
+            // $('#retro').click(function (){
+            //     $("#style").attr('href','awesome.css');
+            // });
+            // $('#ie').click(function (){
+            //     $("#style").attr('href','awesome.css');
+            // });
 
         });
 
     </script>
 
 
-  <!-- Something else -->
   <script type="text/javascript">  
 
     $(function(){
-        
+        $.ajax({
+            url: "https://wrapapi.com/use/nickazg/divers/beacon_hill_cam/0.0.8",
+            method: "POST",
+            data: {
+                "wrapAPIKey": "d9mCuhjIcyt2ThLiEj76EOR6CcOpS5cV"
+            }
+            }).done(function(data) {
+                var output = data.data.output
+                // output.forEach(function(url) {
+                //     $("#webcam").attr('src', url["high-quality"]);
+                // });
+        });
     });
 
   </script>
