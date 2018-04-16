@@ -69,7 +69,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <iframe width="299" height="574" frameborder="0" src="http://www.marineweather.co.nz/forecasts/embed/view/breaker-bay/"></iframe>
+
+                        <iframe style="display:block; margin:20px auto;" id="swellmap" src="https://www.google.com/search?q=%http://www.marineweather.co.nz/forecasts/charts/wellington.co.nz&btnI=Im+Feeling+Lucky" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
                     </td>
                 </tr>
             </table>
@@ -112,6 +113,7 @@
         </td>
     </tr>
 </table>
+
 
 <!-- Epic Javascript Coding HERE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -167,6 +169,27 @@
 
   </script>
 
+  <!-- Get date URL -->
+  <script type="text/javascript">
+
+    $(function(){
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        if (m.toString().length == 1)
+        {
+            m = "0" + m;
+        }
+        d = n.getDate();
+        if (d.toString().length == 1)
+        {
+            d = "0" + d;
+        }
+        var URL = "http://www.marineweather.co.nz//incoming/eLocalLarge/WEL" + y + m + d + "AM.png";
+        $("#swellmap").attr("src", URL);
+    });
+    </script>
+
     <script type="text/javascript">
 
         $(function(){
@@ -195,6 +218,7 @@
 
 
 <<<<<<< HEAD
+
   <script type="text/javascript">
 
     $(function(){
@@ -220,6 +244,21 @@
     });
 
   </script>
+
+<br/>
+<br/>
+
+<h3>Open Tickets:</h3>
+<br/>
+- Embed swell map: http://www.marineweather.co.nz/forecasts/charts/wellington
+<br/>
+- Embed kapiti, and castle point cams
+<br/>
+- Write deep learning algorithm to analyize webcam data
+<br/>
+- Build VizBouy
+<br/>
+- Catch a fucking crayfish
 
 <br/>
 <marquee><h1>All Rights Reserved</h1></marquee>
