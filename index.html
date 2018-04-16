@@ -84,7 +84,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <iframe style="display:block; margin:20px auto;" id="iframewindow" src="https://www.google.com/search?q=%http://www.marineweather.co.nz/forecasts/charts/wellington.co.nz&btnI=Im+Feeling+Lucky" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+
+                        <iframe style="display:block; margin:20px auto;" id="swellmap" src="https://www.google.com/search?q=%http://www.marineweather.co.nz/forecasts/charts/wellington.co.nz&btnI=Im+Feeling+Lucky" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
                     </td>
                 </tr>
             </table>
@@ -178,6 +179,23 @@
     });
 
   </script>
+
+  <!-- Get date URL -->
+  <script type="text/javascript">
+
+    $(function(){
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        if (m.toString().length == 1)
+        {
+            m = "0" + m;
+        }
+        d = n.getDate();
+        var URL = "http://www.marineweather.co.nz//incoming/eLocalLarge/WEL" + y + m + d + "AM.png";
+        $("#swellmap").attr("src", URL);
+    });
+    </script>
 
     <script type="text/javascript">
 
