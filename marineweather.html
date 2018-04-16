@@ -1,0 +1,341 @@
+
+
+</div><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- You can use .htaccess and remove these lines to avoid edge case issues. -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>MarineWeather &raquo; North Island | Swell Chart</title>
+<meta name="author" content="Marine Weather">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Set a base location for assets -->
+<base href="http://www.marineweather.co.nz/"/>
+<!-- End base -->
+<!-- CSS. No need to specify the media attribute unless specifically targeting a media type, leaving blank implies media=all -->
+<link href="http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/css/plugins1.css" rel="stylesheet" type="text/css" />
+
+<link href="http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/css/workless1.css" rel="stylesheet" type="text/css" />
+
+<!-- End CSS-->
+
+<!-- Load up some favicons -->
+<link href="http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!-- All JavaScript at the bottom, except for Modernizr. -->
+<script src="/reference/marineweather/js/libs/modernizr.js" type="text/javascript"></script>
+  	<script src="/reference/marineweather/js/libs/jquery.js" type="text/javascript"></script>
+
+	
+				<script type="text/javascript">
+					var APPPATH_URI = "/system/cms/";
+					var BASE_URI = "/";
+				</script>
+		<link rel="canonical" href="http://www.marineweather.co.nz/forecasts/charts/wellington" />
+		<link rel="alternate" type="application/rss+xml" title="MarineWeather" href="http://www.marineweather.co.nz/blog/rss/all.rss" />
+
+
+</head>
+<body class="swell-charts" onload="prettyPrint()" style="background: rgba(255, 255, 255, 0) center repeat-y; margin: 0; padding: 0; width: 100%;">
+
+<!-- content -->
+<section id="content">
+    <article class="page">
+        <section id="default" class="page-chunk ">
+        <div class="page-chunk-pad">
+            <script type="text/javascript" language="javascript">
+var totalCountOfImages = 14;
+function imageLoaded()
+{
+  totalCountOfImages--;
+  if ( totalCountOfImages == 0 )
+  {
+    MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut.gif',1);
+  }
+}
+function imageError()
+{
+  totalCountOfImages--;
+  if( totalCountOfImages == 0 )
+  {
+    MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut.gif',1);
+  }
+
+}
+function loadAnimation()
+{
+    for(var i = 0; i < adImages.length; i++)
+	 {
+        var myImage = new Image();
+        myImage.onload = imageLoaded;
+        myImage.onerror = imageError;
+        myImage.src = adImages[i];
+    }
+}
+
+/***************animation**********************/
+adImages = new Array('http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423PM.png');
+thisAd = 0;
+imgCt = adImages.length;
+function rotate()
+{
+	if (document.images)
+	{
+		if(thisAd == imgCt)
+		{
+			thisAd = 0;
+		}
+      showChart(thisAd+1);
+		animId=setTimeout("rotate()",1000);
+		thisAd++;
+	}
+}
+animstate=0;
+function animateChart()
+{
+    if(animstate==0)
+	 {
+		animstate=1;
+		MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut2.gif',1);
+		rotate();
+	}
+	else
+	{
+		clearTimeout(animId);
+		animstate=0;
+		MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut.gif',1);
+	}
+   //refreshAds();
+}
+//-->
+var currImgNum = 1;
+function showChart(imgNum, showAm)
+{
+    document.chartpic.src=adImages[imgNum-1];
+    if(imgNum != currImgNum)
+	 {
+        changeClass(currImgNum, false)
+        changeClass(imgNum, true)
+        currImgNum=imgNum;
+        //refreshAds();
+    }
+}
+function changeClass(num, highlight)
+{
+    // if num is even, top is (num - 1)
+    var isPm = num % 2 == 0;
+    if(isPm)
+	 {
+        var day = num / 2;
+    }
+    else
+	 {
+        var day = (num + 1) / 2;
+    }
+    var topTd = "daytd" + day;
+    var topLn = "daya" + day;
+    if(isPm)
+	 {
+        var dayTd = "pmtd" + day;
+        var dayLn = "pma" + day;
+    }
+	 else
+	 {
+        var dayTd = "amtd" + day;
+        var dayLn = "ama" + day;
+    }
+	 //alert(dayTd+":"+highlight);
+    document.getElementById(topTd).className = highlight ? "swell-charts-date-select" : "swell-charts-date";
+    //document.getElementById(topLn).className = highlight ? "chartpopdayAt" : "chartpopday";
+    document.getElementById(dayTd).className = highlight ? "am-select" : "am";
+    //document.getElementById(dayLn).className = highlight ? "chartpopapAt" : "chartpopap"; 
+}
+window.onload=loadAnimation;
+</script>
+<style type="text/css">
+.swell-charts-date-select {
+	float: left;
+	width: 83px;
+	height: 79px;
+	background: #00ADEE;
+	color: #fff;
+}
+.am-select {
+	float: left;
+	width: 41px;
+	height: 18px;
+	margin-top: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background: #00ADEE;
+	color: #fff;
+}
+</style>
+
+<!-- HEADERRRRRRRRR -->
+<div id="swell-charts-data-holder">
+	<div id="swell-charts-date-select">
+		<div class="data-first">
+			<div class="swell-charts-date-select" id="daytd1">
+				<div class="day" onClick="showChart(1);" style="cursor: pointer;" id="daya1"> Tuesday</div>
+				<div class="date" onClick="showChart(1);" style="cursor: pointer;"> 17</div>
+			</div>
+			<div class="am-select" onClick="showChart(1);" style="cursor: pointer;" id="amtd1" id="daya1"><span id="ama1">am</span></div>
+			<div class="pm" onClick="showChart(2);" style="cursor: pointer;" id="pmtd1"> <span id="pma1">pm</span></div>
+		</div>
+		<div class="data">
+			<div class="swell-charts-date" id="daytd2">
+				<div class="day" onClick="showChart(3);" style="cursor: pointer;" id="daya2"> Wednesday</div>
+				<div class="date" onClick="showChart(3);" style="cursor: pointer;"> 18</div>
+			</div>
+			<div class="am" onClick="showChart(3);" style="cursor: pointer;" id="amtd2"> <span id="ama1">am</span></div>
+			<div class="pm" onClick="showChart(4);" style="cursor: pointer;" id="pmtd2"> <span id="pma1">pm</span></div>
+		</div>
+		<div class="data">
+			<div class="swell-charts-date" id="daytd3">
+				<div class="day" onClick="showChart(5);" style="cursor: pointer;" id="daya3"> Thursday</div>
+				<div class="date" onClick="showChart(5);" style="cursor: pointer;"> 19</div>
+			</div>
+			<div class="am" onClick="showChart(5);" style="cursor: pointer;" id="amtd3"> <span id="ama3">am</span></div>
+			<div class="pm" onClick="showChart(6);" style="cursor: pointer;" id="pmtd3"> <span id="pma3">pm</span></div>
+		</div>
+		<div class="data">
+			<div class="swell-charts-date" id="daytd4">
+				<div class="day" onClick="showChart(7);" style="cursor: pointer;" id="daya4"> Friday</div>
+				<div class="date" onClick="showChart(7);" style="cursor: pointer;"> 20</div>
+			</div>
+			<div class="am" onClick="showChart(7);" style="cursor: pointer;" id="amtd4"> <span id="ama4">am</span></div>
+			<div class="pm" onClick="showChart(8);" style="cursor: pointer;" id="pmtd4"> <span id="pma4">pm</span></div>
+		</div>
+		<div class="data">
+			<div class="swell-charts-date" id="daytd5">
+				<div class="day" onClick="showChart(9);" style="cursor: pointer;" id="daya5"> Saturday</div>
+				<div class="date" onClick="showChart(9);" style="cursor: pointer;"> 21</div>
+			</div>
+			<div class="am" onClick="showChart(9);" style="cursor: pointer;" id="amtd5"> <span id="ama5">am</span></div>
+			<div class="pm" onClick="showChart(10);" style="cursor: pointer;" id="pmtd5"> <span id="pma5">pm</span></div>
+		</div>
+		<div class="data">
+			<div class="swell-charts-date" id="daytd6">
+				<div class="day" onClick="showChart(11);" style="cursor: pointer;" id="daya6"> Sunday</div>
+				<div class="date" onClick="showChart(11);" style="cursor: pointer;"> 22</div>
+			</div>
+			<div class="am" onClick="showChart(11);" style="cursor: pointer;" id="amtd6"> <span id="ama6">am</span></div>
+			<div class="pm" onClick="showChart(12);" style="cursor: pointer;" id="pmtd6"> <span id="pma6">pm</span></div>
+		</div>
+		<div class="data">
+			<div class="swell-charts-date" id="daytd7">
+				<div class="day" onClick="showChart(13);" style="cursor: pointer;" id="daya7"> Monday</div>
+				<div class="date" onClick="showChart(13);" style="cursor: pointer;"> 23</div>
+			</div>
+			<div class="am" onClick="showChart(13);" style="cursor: pointer;" id="amtd7"> <span id="ama7">am</span></div>
+			<div class="pm" onClick="showChart(14);" style="cursor: pointer;" id="pmtd7"> <span id="pma7">pm</span></div>
+		</div>
+		<div class="data-animate">
+			<div class="animate-button"><a onClick="animateChart();" style="cursor: pointer;"><img src="http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/loading.gif" width="49" height="49" alt="" name="animbut" id="animbut" /></a></div>
+			<div class="animate-text"> Animate</div>
+		</div>
+	</div>
+</div>
+<div id="banner-container-swell-charts">
+    <div class="banner" style="margin-top: 4px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-8828726755427675";
+/* Forecasts Island */
+google_ad_slot = "8487793214";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+    <div class="banner" style="margin-top: 79px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-8828726755427675";
+/* Page Island */
+google_ad_slot = "3502814887";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    </div>
+<div id="swell-charts-map"><img src="http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417AM.png" width="688" height="436" alt="" name="chartpic" id="chartpic" /></div>
+<div id="pressure-gauge"><img alt="swellchartlocal.png" src="http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/swellchartlocal.png" /></div>
+
+
+<!-- Scripts -->
+<script src="/reference/marineweather/js/jquery.ezmark.min.js" type="text/javascript"></script>
+<script src="/reference/marineweather/js/plugins.js" type="text/javascript"></script>
+<script src="/reference/marineweather/js/script.js" type="text/javascript"></script>
+<script src="/reference/marineweather/js/jquery.fancybox.js" type="text/javascript"></script>
+<script src="/reference/marineweather/js/ZeroClipboard.js" type="text/javascript"></script>
+
+<script type="text/javascript" language="JavaScript">
+
+    var clipbutton = document.getElementById('d_clip_button');
+    if (clipbutton) {
+        var clip = new ZeroClipboard.Client();
+        clip.addEventListener( 'onMouseDown', function(client) {
+            // set text to copy here
+            clip.setText( document.getElementById('mw-embed').value );
+        } );
+
+        clip.addEventListener( 'onComplete', function(client, text) {
+            alert("The embed code has been copied to your clipboard: " + text );
+        } );
+
+      clip.glue( 'd_clip_button' );
+    }
+        
+    function setHomeRegion(region) {
+
+        if (!jQuery("#homeregion").attr('checked')) {
+            return;
+        }
+
+        var expiry = new Date();
+        var date = new Date();
+        expiry.setTime(date.getTime()+(40000000000));
+        document.cookie = "homeregion="+ region +";Path=/;expires=" + expiry.toGMTString();
+    }
+
+    jQuery(function ($) {
+	$('input[type="checkbox"]').ezMark();
+    });
+
+    </script>
+        <!-- START Nielsen Online SiteCensus V6.0 -->
+
+<!-- COPYRIGHT 2012 Nielsen Online -->
+
+<script type="text/javascript" src="//secure-nz.imrworldwide.com/v60.js">
+
+</script>
+
+<script type="text/javascript">
+
+ var pvar = { cid: "nz-greenroom", content: "0", server: "secure-nz" };
+
+ var trac = nol_t(pvar);
+
+ trac.record().post();
+
+</script>
+
+<noscript>
+
+ <div>
+
+ <img src="//secure-nz.imrworldwide.com/cgi-bin/m?ci=nz-greenroom&amp;cg=0&amp;cc=1&amp;ts=noscript"
+
+ width="1" height="1" alt="" />
+
+ </div>
+
+</noscript>
+</body></html>
