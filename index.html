@@ -192,6 +192,10 @@
             m = "0" + m;
         }
         d = n.getDate();
+        if (d.toString().length == 1)
+        {
+            d = "0" + d;
+        }
         var URL = "http://www.marineweather.co.nz//incoming/eLocalLarge/WEL" + y + m + d + "AM.png";
         $("#swellmap").attr("src", URL);
     });
