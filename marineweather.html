@@ -28,7 +28,7 @@
 <script src="/reference/marineweather/js/libs/modernizr.js" type="text/javascript"></script>
   	<script src="/reference/marineweather/js/libs/jquery.js" type="text/javascript"></script>
 
-	
+
 				<script type="text/javascript">
 					var APPPATH_URI = "/system/cms/";
 					var BASE_URI = "/";
@@ -52,7 +52,7 @@ function imageLoaded()
   totalCountOfImages--;
   if ( totalCountOfImages == 0 )
   {
-    MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut.gif',1);
+    MM_swapImage('animbut','','/img/animbut.gif',1);
   }
 }
 function imageError()
@@ -60,7 +60,7 @@ function imageError()
   totalCountOfImages--;
   if( totalCountOfImages == 0 )
   {
-    MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut.gif',1);
+    MM_swapImage('animbut','','/img/animbut.gif',1);
   }
 
 }
@@ -79,6 +79,7 @@ function loadAnimation()
 adImages = new Array('http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423PM.png');
 thisAd = 0;
 imgCt = adImages.length;
+animId=0;
 function rotate()
 {
 	if (document.images)
@@ -98,14 +99,14 @@ function animateChart()
     if(animstate==0)
 	 {
 		animstate=1;
-		MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut2.gif',1);
+		MM_swapImage('animbut','','/img/animbut2.gif',1);
 		rotate();
 	}
 	else
 	{
 		clearTimeout(animId);
 		animstate=0;
-		MM_swapImage('animbut','','http://www.marineweather.co.nz/addons/shared_addons/themes/marineweather/img/animbut.gif',1);
+		MM_swapImage('animbut','','/img/animbut.gif',1);
 	}
    //refreshAds();
 }
@@ -121,6 +122,11 @@ function showChart(imgNum, showAm)
         currImgNum=imgNum;
         //refreshAds();
     }
+}
+function MM_swapImage(divid, img, as)
+{
+    document.getElementById(divid).src = img;
+    animstate = as;
 }
 function changeClass(num, highlight)
 {
@@ -150,7 +156,7 @@ function changeClass(num, highlight)
     document.getElementById(topTd).className = highlight ? "swell-charts-date-select" : "swell-charts-date";
     //document.getElementById(topLn).className = highlight ? "chartpopdayAt" : "chartpopday";
     document.getElementById(dayTd).className = highlight ? "am-select" : "am";
-    //document.getElementById(dayLn).className = highlight ? "chartpopapAt" : "chartpopap"; 
+    //document.getElementById(dayLn).className = highlight ? "chartpopapAt" : "chartpopap";
 }
 window.onload=loadAnimation;
 </script>
@@ -291,7 +297,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
       clip.glue( 'd_clip_button' );
     }
-        
+
     function setHomeRegion(region) {
 
         if (!jQuery("#homeregion").attr('checked')) {
