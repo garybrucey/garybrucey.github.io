@@ -67,19 +67,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-
-                        <iframe style="display:block; margin:20px auto;" id="swellmap" src="https://www.google.com/search?q=%http://www.marineweather.co.nz/forecasts/charts/wellington.co.nz&btnI=Im+Feeling+Lucky" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
-                    </td>
+                    <h4>BOOM Bitches!</h4>
+                    <iframe src="marineweather.html" allowTransparency="true" scrolling="no" frameborder="0" width="680" height="590"></iframe>
                 </tr>
             </table>
         </td>
         <td>
             <table>
-                <tr>
-                    <h4>BOOM Bitches!</h4>
-                    <iframe src="marineweather.html" allowTransparency="true" scrolling="no" frameborder="0" width="680" height="590"></iframe>
-                </tr>                
+
                 <tr>
                     <h4>This is the South Coast - it probably looks like shit:</h4>
                     <iframe style="display:block; margin:20px auto;" id="iframewindow" src="https://encounter.snapithd.com/current/player.php?t=t&amp;w=c62004761cw72&amp;width=640&amp;height=480" width="640" height="480" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
@@ -168,27 +163,6 @@
 
   </script>
 
-  <!-- Get date URL -->
-  <script type="text/javascript">
-
-    $(function(){
-        n =  new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        if (m.toString().length == 1)
-        {
-            m = "0" + m;
-        }
-        d = n.getDate();
-        if (d.toString().length == 1)
-        {
-            d = "0" + d;
-        }
-        var URL = "http://www.marineweather.co.nz//incoming/eLocalLarge/WEL" + y + m + d + "AM.png";
-        $("#swellmap").attr("src", URL);
-    });
-    </script>
-
     <script type="text/javascript">
 
         $(function(){
@@ -249,7 +223,9 @@
 
 <h3>Open Tickets:</h3>
 <br/>
+<strike>
 - Embed swell map: http://www.marineweather.co.nz/forecasts/charts/wellington
+</strike>
 <br/>
 - Embed kapiti, and castle point cams
 <br/>
