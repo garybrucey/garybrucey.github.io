@@ -52,7 +52,7 @@ function imageLoaded()
   totalCountOfImages--;
   if ( totalCountOfImages == 0 )
   {
-    MM_swapImage('animbut','','/img/animbut.gif',1);
+    MM_swapImage('animbut','','img/animbut.gif',1);
   }
 }
 function imageError()
@@ -60,7 +60,7 @@ function imageError()
   totalCountOfImages--;
   if( totalCountOfImages == 0 )
   {
-    MM_swapImage('animbut','','/img/animbut.gif',1);
+    MM_swapImage('animbut','','img/animbut.gif',1);
   }
 
 }
@@ -99,14 +99,14 @@ function animateChart()
     if(animstate==0)
 	 {
 		animstate=1;
-		MM_swapImage('animbut','','/img/animbut2.gif',1);
+		MM_swapImage('animbut','','img/animbut2.gif',1);
 		rotate();
 	}
 	else
 	{
 		clearTimeout(animId);
 		animstate=0;
-		MM_swapImage('animbut','','/img/animbut.gif',1);
+		MM_swapImage('animbut','','img/animbut.gif',1);
 	}
    //refreshAds();
 }
@@ -123,7 +123,7 @@ function showChart(imgNum, showAm)
         //refreshAds();
     }
 }
-function MM_swapImage(divid, img, as)
+function MM_swapImage(divid, emptyShit, img, as)
 {
     document.getElementById(divid).src = img;
     animstate = as;
