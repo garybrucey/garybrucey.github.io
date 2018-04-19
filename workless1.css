@@ -36,7 +36,7 @@ Fonts
 */
 
 @font-face {
-				font-family: 'DINOT-Bold';
+				font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 				src: url('dinot-bold.eot');
 				src: url('dinot-bold.eot?#iefix') format('embedded-opentype'),
 						 url('dinot-bold.woff') format('woff'),
@@ -45,9 +45,9 @@ Fonts
 				font-weight: normal;
 				font-style: normal;
 		}
-		
+
 		@font-face {
-				font-family: 'DINOT-Black';
+				font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 				src: url('dinot-black.eot');
 				src: url('dinot-black.eot?#iefix') format('embedded-opentype'),
 						 url('dinot-black.woff') format('woff'),
@@ -72,11 +72,11 @@ Base
 -------------------------------------------------------------------------------------------------------
 */
 
-* { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.231; 
-text-rendering: optimizeLegibility; font-size: 100%; -webkit-text-size-adjust: 100%; 
+* { font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+text-rendering: optimizeLegibility; font-size: 100%; -webkit-text-size-adjust: 100%;
 -ms-text-size-adjust: 100%; outline: none; }
 html, body { height: 100%; }
-body { background: #fff url(../img/bg-faded.png) center repeat-y; margin: 0; padding: 0; width: 100%; 
+body { background: #fff url(../img/bg-faded.png) center repeat-y; margin: 0; padding: 0; width: 100%;
 overflow-x: hidden; }
 body, button, input, select, textarea { color: #6d6e76; /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/ }
 
@@ -118,14 +118,14 @@ blockquote p { font-size: 14px; font-weight: 300; line-height: 18px; margin-bott
 blockquote small { display: block; font-size: 12px; font-weight: 300; line-height: 18px; color: #bfbfbf; }
 blockquote small:before { content: '\2014 \00A0'; }
 dfn { font-style: italic; }
-hr { display: block; height: 1px; width: 100%; border: 0; border-top: 1px dashed rgba(0, 0, 0, 0.1); 
+hr { display: block; height: 1px; width: 100%; border: 0; border-top: 1px dashed rgba(0, 0, 0, 0.1);
 margin: 10px 0 10px 0; padding: 0; float: left; }
 ins { background: #ff9; color: #333333; text-decoration: none; }
 mark { background: #ff0; color: #333333; font-style: italic; font-weight: bold; }
 address { display: block; line-height: 18px; margin-bottom: 18px; }
 
 /* Redeclare monospace font family, */
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; 
+pre, code, kbd, samp { font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 font-size: 13px; }
 
 /* Improve readability of pre-formatted text in all bgridsers */
@@ -152,12 +152,12 @@ sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 /* Give paragraphs some default styling. */
-p { font-size: 13px; color: #6d6e76; font-weight: normal; line-height: 20px; margin-top: 0; 
+p { font-size: 13px; color: #6d6e76; font-weight: normal; line-height: 20px; margin-top: 0;
 margin-bottom: 18px; text-shadow: 0 1px 0 #ffffff; }
 p small { font-size: 11px; color: #bfbfbf; }
 
 /* Give headings some default styling. */
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #4a525a; 
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #4a525a;
 text-shadow: 0 1px 0 #ffffff; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color: #616a73; }
 
@@ -210,7 +210,7 @@ ul, ol { margin: 15px 0; padding: 0 0 0 25px; }
 dd { margin: 0 0 0 25px; }
 
 /* We probably don't want list-styles showing if it's in a navigation. */
-nav ul, nav ol, #nav ul, #nav ol, #navigation ul, #navigation ol { list-style: none; 
+nav ul, nav ol, #nav ul, #nav ol, #navigation ul, #navigation ol { list-style: none;
 list-style-image: none; margin: 0; padding: 0; }
 
 /*
@@ -260,8 +260,10 @@ fieldset { border: 1px solid rgba(0, 0, 0, 0.2); margin: 5px 0 15px 0; padding: 
 label { cursor: pointer; font-size: 12px; font-weight: bold; }
 legend { border: 0; padding: 0; margin-left: 5px; font-size: 18px; font-weight: bold; }
 
-button, input, select, textarea { font-size: 13px; margin: 0; vertical-align: baseline; 
-*vertical-align: middle; margin: 5px 0 5px 0; }
+button, input, select, textarea { font-size: 13px; margin: 0; vertical-align: baseline;
+*vertical-align: middle; margin: 5px 0 5px 0;
+font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+}
 
 button,
 input[type="reset"],
@@ -313,8 +315,8 @@ input[type="button"]:hover {
   transition: 250ms linear all;
 }
 
-input[type="text"], 
-input[type="password"], 
+input[type="text"],
+input[type="password"],
 textarea {
 	width: 98%;
 	padding: 5px;
@@ -333,7 +335,7 @@ textarea {
 	min-height: 100px;
 }
 
-input.error { 
+input.error {
 	border: 1px solid #ff0000;
 }
 
@@ -495,21 +497,21 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 
 /* Tables for Mobile */
 @media only screen and (max-width: 767px) {
-	
+
 	/* table.responsive { margin-bottom: 0; }
-	
+
 	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
 	.pinned table { border-right: none; border-left: none; width: 100%; }
 	.pinned table th, .pinned table td { white-space: nowrap; }
 	.pinned td:last-child { border-bottom: 0; }
-	
+
 	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
 	div.table-wrapper div.scrollable table { margin-left: 35%; }
-	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
-	
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }
+
 	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
 	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; } */
-	
+
 }
 
 /*
@@ -1151,58 +1153,58 @@ Scaffolding.
 -------------------------------------------------------------------------------------------------------
 */
 
-.one_full { 
-	width: 270px; 
-	margin: 0; 
-	float: left; 
+.one_full {
+	width: 270px;
+	margin: 0;
+	float: left;
 }
 
-.one_half { 
-	width: 270px; 
-	margin-right: 0px; 
-	float: left; 
+.one_half {
+	width: 270px;
+	margin-right: 0px;
+	float: left;
 }
 
-.one_third { 
-	width: 270px; 
-	margin-right: 0px; 
-	float: left; 
+.one_third {
+	width: 270px;
+	margin-right: 0px;
+	float: left;
 }
 
-.two_third { 
-	width: 270px; 
-	margin-right: 0px; 
-	float: left; 
+.two_third {
+	width: 270px;
+	margin-right: 0px;
+	float: left;
 }
 
-.one_quarter { 
-	width: 270px; 
-	margin-right: 0px; 
-	float: left; 
+.one_quarter {
+	width: 270px;
+	margin-right: 0px;
+	float: left;
 }
 
 .one_full, .one_half, .one_third, .two_third, .one_quarter,
-.one_full p, .one_half p, .one_third p, .two_third p, .one_quarter p { 
-	font-size: 13px; 
-	color: #6d6e76; 
-	font-weight: normal; 
-	line-height: 20px; 
-	margin-top: 0; 
-	margin-bottom: 18px; 
-	text-shadow: 0 1px 0 #ffffff; 
+.one_full p, .one_half p, .one_third p, .two_third p, .one_quarter p {
+	font-size: 13px;
+	color: #6d6e76;
+	font-weight: normal;
+	line-height: 20px;
+	margin-top: 0;
+	margin-bottom: 18px;
+	text-shadow: 0 1px 0 #ffffff;
 }
 
 /*
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 
-You can declare your primary styles in the following section, but, if your application becomes CSS 
+You can declare your primary styles in the following section, but, if your application becomes CSS
 'heavy' then I'd suggest moving your primary styles to a seperate stylesheet and including that in the
 HEAD.
 
 Why? Internet Explorer.
 
-Internet Explorer stops reading CSS selectors after 4095, effectively ignoring the rest of your CSS 
+Internet Explorer stops reading CSS selectors after 4095, effectively ignoring the rest of your CSS
 declarations!
 
 -------------------------------------------------------------------------------------------------------
@@ -1281,7 +1283,7 @@ div.fb-mini {
 	background: url(../img/littlefacebook.png) no-repeat;
 }
 table#u_0_0.uiGrid.pluginConnectButtonLayoutRoot tbody tr td.pls {
-padding-top: 4px;	
+padding-top: 4px;
 }
 div.uiIconText i.img.sp_like.sx_like_fav {
 left: 0;
@@ -1302,7 +1304,7 @@ span.slogan {
 
 nav#primary {
 	margin: 16px 0 0 0;
-	float: right;	
+	float: right;
 }
 
 nav#primary ul li {
@@ -1358,29 +1360,29 @@ nav#primary ul li.current a {
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-nav#primary ul li.current { 
-	background:#00ADEE; 
+nav#primary ul li.current {
+	background:#00ADEE;
 }
 
-nav#primary ul li a:hover { 
-	background:#00ADEE; 
+nav#primary ul li a:hover {
+	background:#00ADEE;
 	color: #fff;
 }
 
 nav#primary ul li.has_children.has_current {
-	background:#00ADEE; 
+	background:#00ADEE;
 	color:#fff;
 }
 
 /* Second level dropdown */
-nav#primary ul li ul { 
+nav#primary ul li ul {
 	background: rgba(0, 0, 0, 0.9);
 	min-width: 100px;
-	display: none; 
-	position: absolute; 
-	margin: 0px; 
-	padding: 0 0 3px 0; 
-	z-index: 10; 
+	display: none;
+	position: absolute;
+	margin: 0px;
+	padding: 0 0 3px 0;
+	z-index: 10;
 	border-radius: 1px;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 1px;
@@ -1388,33 +1390,33 @@ nav#primary ul li ul {
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-	
-nav#primary ul li ul li { 
-	background: none; 
-	margin: 0; 
-	padding: 0; 
-	position: relative; 
-	z-index: 99999;  
+
+nav#primary ul li ul li {
+	background: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 99999;
 	display: block;
 	float: none;
 	text-shadow: none;
 	border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-nav#primary ul li ul li.last { 
-	background: none; 
-}
-	
-nav#primary ul li ul li:nth-last-child(1) { 
-	border: none; 
-}
-	
-nav#primary ul li ul li a { 
+nav#primary ul li ul li.last {
 	background: none;
-	text-shadow: none; 
-	padding: 6px;  
-	position: relative; 
-	z-index: 102; 
+}
+
+nav#primary ul li ul li:nth-last-child(1) {
+	border: none;
+}
+
+nav#primary ul li ul li a {
+	background: none;
+	text-shadow: none;
+	padding: 6px;
+	position: relative;
+	z-index: 102;
 	display: block;
 	float: none;
 }
@@ -1652,7 +1654,7 @@ nav#home-nav ul li.first {
 
 nav#home-nav ul li a {
 		padding: 6px 10px 8px 10px;
-		font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 		font-size: 12px;
 		color: #4D4D4D;
 		font-weight: normal;
@@ -1665,11 +1667,11 @@ nav#home-nav ul li.current a {
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-nav#home-nav ul li.current { 
-	background:#00ADEE; 
+nav#home-nav ul li.current {
+	background:#00ADEE;
 }
 
-nav#home-nav ul li a:hover {  
+nav#home-nav ul li a:hover {
 	color: #fff;
 	/*background: url(../img/forecast-nav-bg-hover.png) repeat-x top;
 	z-index: 99999;*/
@@ -1771,7 +1773,7 @@ nav#forecast-nav ul li.first {
 
 nav#forecast-nav ul li a {
 		padding: 6px 10px 8px 10px;
-		font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 		font-size: 12px;
 		color: #4D4D4D;
 		font-weight: normal;
@@ -1784,11 +1786,11 @@ nav#forecast-nav ul li.current a {
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-nav#forecast-nav ul li.current { 
-	background:#00ADEE; 
+nav#forecast-nav ul li.current {
+	background:#00ADEE;
 }
 
-nav#forecast-nav ul li a:hover {  
+nav#forecast-nav ul li a:hover {
 	color: #fff;
 	/*background: url(../img/forecast-nav-bg-hover.png) repeat-x top;
 	z-index: 99999;*/
@@ -1799,7 +1801,7 @@ nav#forecast-nav ul li a:hover {
 	float: left;
 	display: block;
 	line-height: 1.5em;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 26px;
 	font-weight: bold;
 	color: #00ADEE;
@@ -1842,7 +1844,7 @@ nav#forecast-nav ul li a:hover {
 	margin-top: 16px;
 	width: 414px;
 }
-.join-mw-facebook { 
+.join-mw-facebook {
 	float: left;
 	margin-top: 24px;
 }
@@ -1892,7 +1894,7 @@ div.fb-like-box.fb_iframe_widget {
 	padding: 7px 0 0 12px;
 	background: url(../img/forecast-region-bg.png) no-repeat top left;
 	font-size: 20px;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #00ADEE;
 }
 
@@ -1900,7 +1902,7 @@ div.fb-like-box.fb_iframe_widget {
 	float: left;
 	display: block;
 	width: 179px;
-	font-family: Trebuchet MS;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 24px;
 	line-height: 1.65em;
 	margin: 0px;
@@ -1938,7 +1940,7 @@ div.fb-like-box.fb_iframe_widget {
 
 #forecast-home-selector div.links ul li a {
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -1946,7 +1948,7 @@ div.fb-like-box.fb_iframe_widget {
 
 #forecast-home-selector div.links ul li a:hover {
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #00ADEE;
@@ -1957,7 +1959,7 @@ div.fb-like-box.fb_iframe_widget {
 	display: block;
 	width: 180px;
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -1968,7 +1970,7 @@ div.fb-like-box.fb_iframe_widget {
 	display: block;
 	width: 57px;
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -1982,7 +1984,7 @@ div.fb-like-box.fb_iframe_widget {
 	width: 99px;
 	line-height: 13px;
 	padding: 0px 0 0px 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -1996,7 +1998,7 @@ div.fb-like-box.fb_iframe_widget {
 	width: 99px;
 	line-height: 13px;
 	padding: 0px 0 0px 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #00ADEE;
@@ -2024,7 +2026,7 @@ span.reg-id {
 	margin: 8px 0 8px 20px;
 	display: block;
 	width: 10%;
-	font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 34px;
 	color: #00ADEE;
 }
@@ -2083,7 +2085,7 @@ nav#swell-charts-nav ul li.first {
 
 nav#swell-charts-nav ul li a {
 		padding: 6px 10px 8px 10px;
-		font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 		font-size: 12px;
 		color: #4D4D4D;
 		font-weight: normal;
@@ -2096,11 +2098,11 @@ nav#forecast-nav ul li.current a {
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-nav#swell-charts-nav ul li.current { 
-	background:#00ADEE; 
+nav#swell-charts-nav ul li.current {
+	background:#00ADEE;
 }
 
-nav#swell-charts-nav ul li a:hover {  
+nav#swell-charts-nav ul li a:hover {
 	color: #fff;
 	border-bottom: 10px solid #4d4d4d;
 }
@@ -2109,7 +2111,7 @@ nav#swell-charts-nav ul li a:hover {
 	float: left;
 	display: block;
 	line-height: 1.5em;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 26px;
 	font-weight: bold;
 	color: #00ADEE;
@@ -2151,7 +2153,7 @@ nav#swell-charts-nav ul li a:hover {
 	padding: 7px 0 0 12px;
 	background: url(../img/forecast-region-bg.png) no-repeat top left;
 	font-size: 20px;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #00ADEE;
 }
 
@@ -2160,7 +2162,7 @@ nav#swell-charts-nav ul li a:hover {
 	display: block;
 	width: 179px;
 	color: #4d4d4d;
-	font-family: Trebuchet MS;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 24px;
 	line-height: 1.65em;
 	margin: 0px;
@@ -2172,7 +2174,7 @@ nav#swell-charts-nav ul li a:hover {
 	padding: 7px 0 0 12px;
 	background: url(../img/forecast-region-bg.png) no-repeat top left;
 	font-size: 20px;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #00ADEE;
 }
 .regional-spots h3 {
@@ -2180,7 +2182,7 @@ nav#swell-charts-nav ul li a:hover {
 	display: block;
 	width: 600px;
 	color: #4d4d4d;
-	font-family: Trebuchet MS;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 24px;
 	line-height: 1.65em;
 	margin: 0px;
@@ -2241,7 +2243,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 	display: block;
 	width: 179px;
 	color: #333;
-	font-family: Trebuchet MS;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 24px;
 	line-height: 1.65em;
 	margin: 0px;
@@ -2266,7 +2268,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 
 #swell-charts-home-selector div.links ul li a {
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -2274,7 +2276,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 
 #swell-charts-home-selector div.links ul li a:hover {
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #00ADEE;
@@ -2285,7 +2287,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 	display: block;
 	width: 180px;
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -2296,7 +2298,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 	display: block;
 	width: 57px;
 	line-height: 1.35em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -2310,7 +2312,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 	width: 110px;
 	line-height: 13px;
 	padding: 0px 0 0px 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #b3b3b3;
@@ -2324,7 +2326,7 @@ body.regional-swell-chart div.links span.regional-swellperiod, body.nz-swell-cha
 	width: 110px;
 	line-height: 13px;
 	padding: 0px 0 0px 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color: #00ADEE;
@@ -2371,7 +2373,7 @@ div.map span.regional-wind {
 	float: left;
 	display: block;
 	line-height: 1.5em;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 34px;
 	font-weight: bold;
 	color: #00ADEE;
@@ -2397,7 +2399,7 @@ div.map span.regional-wind {
 }
 
 .marine-forecasts .area-select span {
-	font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #666;
 	font-size:14px
 }
@@ -2430,7 +2432,7 @@ width: 200px;
    overflow: hidden;
    background: url(../img/down_arrow_select.jpg) no-repeat right #fff;
 }
-	
+
 .forecast-select select {
 	background: transparent;
 	width: 228px;
@@ -2515,7 +2517,7 @@ body.marine-forecasts #wind {
 }
 
 #forecast-point h3, #shoreline-swell h3, #wind h3, #tides h3 {
-	font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-weight: normal;
 	font-size: 14px;
 	color: #808080;
@@ -2523,7 +2525,7 @@ body.marine-forecasts #wind {
 }
 
 #forecast-point h4, #shoreline-swell h4, #wind h4, #tides h4 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 }
 
 #forecast-point h4 {
@@ -2583,7 +2585,7 @@ tr.forecast-day td.first-column {
 tr.forecast-day td {
 	width: 77px;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #999;
 	padding-bottom: 4px;
 	background: url(../img/forecast-day_bg.png) no-repeat;
@@ -2643,7 +2645,7 @@ tr.forecast-day td:hover {
 	width: 25px;
 	margin-left: 1px;
 	font-size: 10px;
-	
+
 }
 
 tr.forecast-bars td {
@@ -2659,7 +2661,7 @@ tr.forecast-bars td div.forecast-bars1 {
 	height: 181px;
 	background: #E6E6E6;
 position:relative;
-	
+
 }
 
 /*.forecast-bars div {
@@ -2710,7 +2712,7 @@ div#swell-column1 {
 .swell img {
 	display:block;
 	margin: 4px auto;
-	
+
 }
 .swell span.direction {
 	float: left;
@@ -2746,7 +2748,7 @@ body.marine-forecasts tr.wind td {
 body.marine-forecasts tr.wind td.wind-column1 {
 	width: 109px;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #666;
 	padding-bottom: 4px;
 	background: url(../img/forecast-wind_bg.png) no-repeat;
@@ -2755,16 +2757,16 @@ body.marine-forecasts tr.wind td.wind-column1 {
 body.marine-forecasts td.wind-column1 h6 {
 	margin: 26px 0 2px 0;
 	text-align: center;
-	font-family: 'DINOT-Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20px; 
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+	font-size: 20px;
 	color: #8BC53F;
 }
 
 body.marine-forecasts td.wind-column1 p {
 	margin: 0px;
 	text-align: center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 10px; 
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+	font-size: 10px;
 	font-weight: bold;
 	color: #666;
 	line-height: 1.1em;
@@ -2789,7 +2791,7 @@ body.marine-forecasts .wind div {
 body.marine-forecasts .wind img {
 	display:block;
 	margin: 24px auto 4px auto;
-	
+
 }
 body.marine-forecasts .wind span.direction {
 	float: left;
@@ -2811,7 +2813,7 @@ body.marine-forecasts .wind span.speed {
 tr.tides td.tides-column1 {
 	width: 92px;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #666;
 	padding: 0 17px 4px 0;
 	background: url(../img/icon-tides-forecast.png) no-repeat top right;
@@ -2824,16 +2826,16 @@ tr.tides td.tides-column1:hover {
 td.tides-column1 h6 {
 	margin: 2px 0 2px 0;
 	text-align: center;
-	font-family: 'DINOT-Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20px; 
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+	font-size: 20px;
 	color: #00ADEE;
 }
 
 td.tides-column1 p {
 	margin: 0px;
 	text-align: center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 10px; 
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
+	font-size: 10px;
 	font-weight: bold;
 	color: #666;
 	line-height: 1.1em;
@@ -2859,7 +2861,7 @@ tr.tides td {
 	height: 98px;
 	vertical-align: top;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	color: #999;
 	padding-bottom: 4px;
 	background: url(../img/forecast-tides_bg.png) no-repeat;
@@ -2900,7 +2902,7 @@ Pressure.
 	float: left;
 	display: block;
 	line-height: 1.5em;
-	font-family: 'DINOT-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 34px;
 	font-weight: bold;
 	color: #00ADEE;
@@ -2981,7 +2983,7 @@ div#close a:hover {
 	font-size: 18px;
 	color: #00ADEE;
 	font-weight: bold;
-	
+
 }
 
 div#close a:active {
@@ -2991,7 +2993,7 @@ div#close a:active {
 	font-size: 18px;
 	color: #00ADEE;
 	font-weight: bold;
-	
+
 }
 
 .pressure-date {
@@ -3018,7 +3020,7 @@ div#close a:active {
 	width: 77px;
 	height: 98px;
 	background: url(../img/pressure-header_bg.png) no-repeat;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	text-align: center;
 	color: #00ADEE;
 }
@@ -3029,7 +3031,7 @@ div#close a:active {
 	width: 77px;
 	height: 98px;
 	background: url(../img/pressure-header_bg.png) no-repeat;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	text-align: center;
 	color: #00ADEE;
 }
@@ -3040,13 +3042,13 @@ div#close a:active {
 	width: 58px;
 	height: 98px;
 	background: #333;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 }
 
 #pressure-date-select .day {
 	padding: 16px 0 1px 0;
 	line-height: 1.3em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 11px;
 	text-shadow: none;
 }
@@ -3055,7 +3057,7 @@ div#close a:active {
 	font-size: 18px;
 	padding-bottom: 25px;
 	border-bottom: #f4f4f5 2px solid;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 }
 
 #pressure-date-select .am {
@@ -3063,7 +3065,7 @@ div#close a:active {
 	width: 38px;
 	height: 19px;
 	margin-top: 2px;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 }
 
@@ -3072,7 +3074,7 @@ div#close a:active {
 	width: 38px;
 	height: 19px;
 	margin: 2px 0 0 1px;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 }
 
@@ -3087,7 +3089,7 @@ div#close a:active {
 
 #pressure-date-select .animate-text {
 	height: 23px;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 }
@@ -3174,14 +3176,14 @@ div#close a:active {
 #pressure-map {
 	float: left;
 	width: 688px;
-	height: 436px; 
+	height: 436px;
 }
 
 #pressure-links {
 	float: left;
 	margin-left: 2px;
 	width: 310px;
-	height: 436px; 
+	height: 436px;
 	background: #FFF;
 }
 
@@ -3234,7 +3236,7 @@ div#close a:active {
 	float: left;
 	line-height: 2.7em;
 	color: #B3B3B3;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 16px;
 	text-shadow: none;
 	-webkit-margin-before: 0em;
@@ -3279,7 +3281,7 @@ Swell charts.
 	float: left;
 	display: block;
 	line-height: 1.5em;
-	font-family: 'DINOT-Bold';
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 34px;
 	font-weight: bold;
 	color: #00ADEE;
@@ -3333,7 +3335,7 @@ Swell charts.
 	width: 83px;
 	height: 98px;
 	background: url(../img/pressure-header_bg.png) repeat-x;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	text-align: center;
 	color: #00ADEE;
 }
@@ -3344,7 +3346,7 @@ Swell charts.
 	width: 83px;
 	height: 98px;
 	background: url(../img/pressure-header_bg.png) repeat-x;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	text-align: center;
 	color: #00ADEE;
 }
@@ -3354,7 +3356,7 @@ Swell charts.
 	width: 93px;
 	height: 98px;
 	background: url(../img/pressure-header_bg.png) repeat-x;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	text-align: center;
 	color: #00ADEE;
 }
@@ -3363,13 +3365,13 @@ Swell charts.
 	margin-left: 2px;
 	width: 58px;
 	height: 98px;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 }
 
 #swell-charts-date-select .day {
 	padding: 16px 0 1px 0;
 	line-height: 1.3em;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 11px;
 	text-shadow: none;
 }
@@ -3378,7 +3380,7 @@ Swell charts.
 	font-size: 18px;
 	padding-bottom: 25px;
 	border-bottom: #f4f4f5 2px solid;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 }
 
 #swell-charts-date-select .am {
@@ -3386,7 +3388,7 @@ Swell charts.
 	width: 41px;
 	height: 19px;
 	margin-top: 2px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 }
 
@@ -3395,7 +3397,7 @@ Swell charts.
 	width: 41px;
 	height: 19px;
 	margin: 2px 0 0 1px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 }
 
@@ -3410,7 +3412,7 @@ Swell charts.
 
 #swell-charts-date-select .animate-text {
 	height: 23px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 }
@@ -3471,7 +3473,7 @@ body.marine-forecasts #map-hover .wind h5 {
 	float: left;
 	line-height: 2.7em;
 	color: #B3B3B3;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 16px;
 	text-shadow: none;
 	margin: 0px;
@@ -3494,7 +3496,7 @@ body.marine-forecasts #map-hover .wind h5 {
 	color: #fff;
 	font-weight: bold;
 	font-size: 13px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	text-shadow: none;
 }
 
@@ -3507,7 +3509,7 @@ body.marine-forecasts #map-hover .wind h5 {
 	float: left;
 	line-height: 2.7em;
 	color: #B3B3B3;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 16px;
 	text-shadow: none;
 	margin: 0px;
@@ -3528,7 +3530,7 @@ body.marine-forecasts #map-hover .wind h5 {
 	float: left;
 	line-height: 2.7em;
 	color: #B3B3B3;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 16px;
 	text-shadow: none;
 	margin: 0px;
@@ -3562,7 +3564,7 @@ body.marine-forecasts #map-hover .wind h5 {
 
 .swell-charts-links ul li {
 	line-height: 1.4em;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 10px;
 	color: #999;
 	text-shadow: none;
@@ -3570,7 +3572,7 @@ body.marine-forecasts #map-hover .wind h5 {
 
 .swell-charts-links ul li a {
 	line-height: 1.4em;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #00ADEE;
@@ -3579,7 +3581,7 @@ body.marine-forecasts #map-hover .wind h5 {
 
 .swell-charts-links ul li a:hover, .swell-charts-links ul li a.active {
 	line-height: 1.4em;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 14px;
 	color: #333;
 	text-shadow: none;
@@ -3589,7 +3591,7 @@ body.marine-forecasts #map-hover .wind h5 {
 	float: left;
 	margin-top: 2px;
 	width: 688px;
-	height: 436px; 
+	height: 436px;
 }
 
 
@@ -3608,7 +3610,7 @@ body.marine-forecasts #map-hover .wind h5 {
 	float: left;
 	line-height: 2.7em;
 	color: #B3B3B3;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
 	font-size: 16px;
 	text-shadow: none;
 	-webkit-margin-before: 0em;
@@ -4079,77 +4081,77 @@ Ensure your main styling comes before this!
 		/* width: 480px; */
 		margin: auto;
 	}
-	
+
 	header {
 		width: 990px;
 	}
-	
+
 	#content, footer {
 		width: 950px;
 	}
-	
-	.flexslider, .post .post_date { 
-		display: inherit; 
+
+	.flexslider, .post .post_date {
+		display: inherit;
 	}
-	
+
 	.post, .single_post {
 		width: 400px
 	}
-	
+
 	#comments input[type="text"], #comments textarea {
 		width: 390px;
 		margin-top: 5px;
 	}
-	
+
 	/*
 	#logo,  aside, .single_post h5 small a {
 		display: none;
 	}
 	*/
-	
+
 	nav#primary {
-		float: right;	
+		float: right;
 	}
 	nav#primary ul li {
 		margin: 0 0 0 2px;
 		float: left;
 	}
-	
+
 	.single_post h5, .single_post h5 a {
 		font-size: 16px;
 	}
-	
+
 	footer .widget {
 		width: 430px;
 	}
-	
+
 	footer .social {
 		margin-right: 0;
 	}
-	
-	.one_full { 
-		width: 430px; 
-		margin: 0; 
+
+	.one_full {
+		width: 430px;
+		margin: 0;
 	}
 
-	.one_half { 
-		width: 175px; 
-		margin-right: 50px; 
+	.one_half {
+		width: 175px;
+		margin-right: 50px;
 	}
 
-	.one_third { 
-		width: 430px; 
-		margin-right: 50px; 
+	.one_third {
+		width: 430px;
+		margin-right: 50px;
 	}
 
-	.two_third { 
-		width: 430px; 
-		margin-right: 50px; 
+	.two_third {
+		width: 430px;
+		margin-right: 50px;
 	}
 
-	.one_quarter { 
-		width: 430px; 
-		margin-right: 50px; 
+	.one_quarter {
+		width: 430px;
+		margin-right: 50px;
 	}
 }
 
@@ -4159,20 +4161,20 @@ Ensure your main styling comes before this!
 		width: 1000px;
 		margin: auto;
 	}
-	
+
 	header {
 		width: 990px;
 	}
 	footer {
 		width: 950px;
 	}
-	
+
 	#content {
 		width: 950px;
 	}
-	
-	.flexslider, #logo, span.slogan, .post .post_date { 
-		display: inherit; 
+
+	.flexslider, #logo, span.slogan, .post .post_date {
+		display: inherit;
 	}
 	/*
 	span.slogan {
@@ -4182,7 +4184,7 @@ Ensure your main styling comes before this!
 	nav#primary {
 		float: right;
 	}
-	
+
 	nav#primary ul li {
 		margin: 0 0 0 2px;
 		float: left;
@@ -4205,65 +4207,65 @@ Ensure your main styling comes before this!
 	nav#primary ul li.current {
 		background: #00ADEE;
 	}
-	
+
 	nav#primary ul li.current a:hover {
 		color: #ffffff;
 	}
-	
+
 	.post, .single_post {
 		width: 370px
 	}
-	
+
 	#comments input[type="text"], #comments textarea {
 		width: 360px;
 		margin-top: 5px;
 	}
-	
+
 	aside {
 		width: 312px;
-		display: inherit; 
+		display: inherit;
 	}
-	
+
 	.single_post h5 small a {
 		display: inherit;
 	}
-	
+
 	.single_post h5, .single_post h5 a {
 		font-size: 18px;
 	}
-	
+
 	footer .widget {
 		width: 590px;
 		margin-right: 0;
 	}
-	
+
 	footer .social {
 		margin-right: 0;
 	}
-	
-	.one_full { 
-		width: 590px; 
-		margin: 0; 
+
+	.one_full {
+		width: 590px;
+		margin: 0;
 	}
 
-	.one_half { 
-		width: 265px; 
-		margin-right: 50px; 
+	.one_half {
+		width: 265px;
+		margin-right: 50px;
 	}
 
-	.one_third { 
-		width: 160px; 
-		margin-right: 50px; 
+	.one_third {
+		width: 160px;
+		margin-right: 50px;
 	}
 
-	.two_third { 
-		width: 370px; 
-		margin-right: 50px; 
+	.two_third {
+		width: 370px;
+		margin-right: 50px;
 	}
 
-	.one_quarter { 
-		width: 110px; 
-		margin-right: 50px; 
+	.one_quarter {
+		width: 110px;
+		margin-right: 50px;
 	}
 }
 
@@ -4273,32 +4275,32 @@ Ensure your main styling comes before this!
 		width: 1000px;
 		margin: auto;
 	}
-	
+
 	header, footer {
 		width: 990px;
 	}
-	
+
 	#content {
 		width: 950px;
 	}
-	
+
 	footer {
 		width: 950px;
 	}
-	
-	.flexslider, #logo, span.slogan, .post .post_date { 
-		display: inherit; 
+
+	.flexslider, #logo, span.slogan, .post .post_date {
+		display: inherit;
 	}
-	
+
 	nav#primary {
 		float: right;
 	}
-	
+
 	nav#primary ul li {
 		margin: 0 0 0 2px;
 		float: left;
 	}
-	
+
 	nav#primary ul li.last { background: #666; }
 
 nav#primary ul li a {
@@ -4318,68 +4320,68 @@ nav#primary ul li a {
 	nav#primary ul li.current {
 		background: #00ADEE;
 	}
-	
+
 	nav#primary ul li.current a:hover {
 		color: #ffffff;
 	}
-	
+
 	.post, .single_post {
 		width: 635px
 	}
-	
+
 	#comments input[type="text"], #comments textarea {
 		width: 622px;
 		margin-top: 5px;
 	}
-	
+
 	aside {
 		width: 312px;
-		display: inherit; 
+		display: inherit;
 	}
 	body.pressure aside {
 		width: 300px;
 	}
-	
+
 	.single_post h5 small a {
 		display: inherit;
 	}
-	
+
 	.single_post h5, .single_post h5 a {
 		font-size: 20px;
 	}
-	
+
 	footer .widget {
 		width: 200px;
 		margin-right: 35px;
 	}
-	
+
 	footer .social {
 		margin-right: 0;
 	}
-	
-	.one_full { 
-		width: 910px; 
-		margin: 0; 
+
+	.one_full {
+		width: 910px;
+		margin: 0;
 	}
 
-	.one_half { 
-		width: 425px; 
-		margin-right: 50px; 
+	.one_half {
+		width: 425px;
+		margin-right: 50px;
 	}
 
-	.one_third { 
-		width: 270px; 
-		margin-right: 50px; 
+	.one_third {
+		width: 270px;
+		margin-right: 50px;
 	}
 
-	.two_third { 
-		width: 590px; 
-		margin-right: 50px; 
+	.two_third {
+		width: 590px;
+		margin-right: 50px;
 	}
 
-	.one_quarter { 
-		width: 180px; 
-		margin-right: 50px; 
+	.one_quarter {
+		width: 180px;
+		margin-right: 50px;
 	}
 }
 
@@ -4389,39 +4391,39 @@ nav#primary ul li a {
 		width: 1000px;
 		margin: auto;
 	}
-	
+
 	header, #content, footer {
 		width: 990px;
 	}
-	
+
 	.marine-forecasts #content {
 		width: 1000px;
 		padding: 0;
 	}
-	
+
 	.pressure #content, .regional-swell-chart #content {
 		width: 1000px;
 		padding: 0;
 	}
-	
+
 	.swell-charts #content {
 		width: 1000px;
 		padding: 0;
 		background: #fff;
 	}
-	
+
 	#content, footer {
 		width: 950px;
 	}
-	
-	.flexslider, #logo, span.slogan .post .post_date{ 
-		display: inherit; 
+
+	.flexslider, #logo, span.slogan .post .post_date{
+		display: inherit;
 	}
-	
+
 	nav#primary {
 		float: right;
 	}
-	
+
 	nav#primary ul li {
 		margin: 0 0 0 2px;
 		float: left;
@@ -4446,65 +4448,65 @@ nav#primary ul li a {
 	nav#primary ul li.current {
 		background: #00ADEE;
 	}
-	
+
 	nav#primary ul li.current a:hover {
 		color: #ffffff;
 	}
-	
+
 	.post, .single_post {
 		width: 625px
 	}
-	
+
 	#comments input[type="text"], #comments textarea {
 		width: 615px;
 		margin-top: 5px;
 	}
-	
+
 	aside {
 		width: 312px;
-		display: inherit; 
+		display: inherit;
 	}
-	
+
 	.single_post h5 small a {
 		display: inherit;
 	}
-	
+
 	.single_post h5, .single_post h5 a {
 		font-size: 22px;
 	}
-	
+
 	footer .widget {
 		width: 200px;
 		margin-right: 40px;
 	}
-	
+
 	footer .social {
 		margin-right: 0;
 	}
-	
-	.one_full { 
-		width: 950px; 
-		margin: 0; 
+
+	.one_full {
+		width: 950px;
+		margin: 0;
 	}
 
-	.one_half { 
-		width: 450px; 
-		margin-right: 50px; 
+	.one_half {
+		width: 450px;
+		margin-right: 50px;
 	}
 
-	.one_third { 
-		width: 280px; 
-		margin-right: 50px; 
+	.one_third {
+		width: 280px;
+		margin-right: 50px;
 	}
 
-	.two_third { 
-		width: 610px; 
-		margin-right: 50px; 
+	.two_third {
+		width: 610px;
+		margin-right: 50px;
 	}
 
-	.one_quarter { 
-		width: 200px; 
-		margin-right: 50px; 
+	.one_quarter {
+		width: 200px;
+		margin-right: 50px;
 	}
 }
 
@@ -4514,23 +4516,23 @@ nav#primary ul li a {
 		width: 1000px;
 		margin: auto;
 	}
-	
+
 	header {
 		width: 990px;
 	}
-	
+
 	#content, footer {
 		width: 950px;
 	}
-	
-	.flexslider, #logo, span.slogan .post .post_date { 
-		display: inherit; 
+
+	.flexslider, #logo, span.slogan .post .post_date {
+		display: inherit;
 	}
-	
+
 	nav#primary {
 		float: right;
 	}
-	
+
 	nav#primary ul li {
 		margin: 0 0 0 2px;
 		float: left;
@@ -4553,65 +4555,65 @@ nav#primary ul li a {
 	nav#primary ul li.current {
 		background: #00ADEE;
 	}
-	
+
 	nav#primary ul li.current a:hover {
 		color: #ffffff;
 	}
-	
+
 	.post, .single_post {
 		width: 825px
 	}
-	
+
 	#comments input[type="text"], #comments textarea {
 		width: 815px;
 		margin-top: 5px;
 	}
-	
+
 	aside {
 		width: 312px;
-		display: inherit; 
+		display: inherit;
 	}
-	
+
 	.single_post h5 small a {
 		display: inherit;
 	}
-	
+
 	.single_post h5, .single_post h5 a {
 		font-size: 24px;
 	}
-	
+
 	footer .widget {
 		width: 250px;
 		margin-right: 50px;
 	}
-	
+
 	footer .social {
 		margin-right: 0;
 	}
-	
-	.one_full { 
-		width: 1150px; 
-		margin: 0; 
+
+	.one_full {
+		width: 1150px;
+		margin: 0;
 	}
 
-	.one_half { 
-		width: 550px; 
-		margin-right: 50px; 
+	.one_half {
+		width: 550px;
+		margin-right: 50px;
 	}
 
-	.one_third { 
-		width: 350px; 
-		margin-right: 50px; 
+	.one_third {
+		width: 350px;
+		margin-right: 50px;
 	}
 
-	.two_third { 
-		width: 750px; 
-		margin-right: 50px; 
+	.two_third {
+		width: 750px;
+		margin-right: 50px;
 	}
 
-	.one_quarter { 
-		width: 250px; 
-		margin-right: 50px; 
+	.one_quarter {
+		width: 250px;
+		margin-right: 50px;
 	}
 }
 
@@ -4661,7 +4663,7 @@ Non-semantic helper classes.
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
 
-/* Contain floats. */ 
+/* Contain floats. */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
@@ -4702,7 +4704,7 @@ Print styles. Inlined to avoid HTTP connection.
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 */
- 
+
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster */
   a, a:visited { text-decoration: underline; }
@@ -4970,56 +4972,56 @@ Print styles. Inlined to avoid HTTP connection.
 /*==================================================================*/
 .swelltxt_new {
     color: #0099FF;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: normal;
     line-height: 13px;
 }
 .windtxt_new {
     color: #BFE459;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: normal;
     line-height: 13px;
 }
 .tidetxt {
     color: #666666;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: normal;
     line-height: 13px;
 }
 .tidetxtbold {
     color: #666666;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: bold;
     line-height: 13px;
 }
 .swelltxtbld_new {
     color: #0099FF;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: bold;
     line-height: 13px;
 }
 .windtxtbold_new {
     color: #BFE459;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: bold;
     line-height: 13px;
 }
 .windtxt {
     color: #BFE459;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: normal;
     line-height: 13px;
 }
 .windtxtbold {
     color: #BFE459;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
     font-size: 9px;
     font-weight: bold;
     line-height: 13px;
@@ -5131,7 +5133,7 @@ body.mobile.regional-swell-chart div.links span, body.mobile.nz-swell-chart div.
     float: left;
 }
 .mobile footer { padding: 0; min-height: 100px; }
-.mobile footer .global-logo { 
+.mobile footer .global-logo {
     width: 80px;
     margin-left: 16px;
 }
