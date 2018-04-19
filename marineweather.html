@@ -201,7 +201,7 @@ document.getElementById("swell-charts-map-img").src = adImages[0];
 
 // adImages = new Array('http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423PM.png');
 var thisAd = 0;
-var imgCt = adImages.length;
+var imgCt = adImages.length-1;
 var animId = 0;
 function rotate()
 {
@@ -209,9 +209,12 @@ function rotate()
 	{
 		if(thisAd == imgCt)
 		{
-			thisAd = 0;
+            showChart(1);
 		}
-        showChart(thisAd+2);
+        else
+        {
+            showChart(thisAd+2);
+        }
 		animId=setTimeout("rotate()",1000);
 		//thisAd++;
 	}
@@ -235,6 +238,7 @@ function animateChart()
 function showChart(imgNum, showAm)
 {
     var currImgNum = thisAd + 1;
+    console.log(imgNum)
     document.chartpic.src=adImages[imgNum-1];
     if(imgNum != currImgNum)
 	 {
