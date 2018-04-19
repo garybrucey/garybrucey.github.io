@@ -77,43 +77,42 @@ function loadAnimation()
 
 /***************animation**********************/
 adImages = new Array('http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180417PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180418PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180419PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180420PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180421PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180422PM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423AM.png','http://www.marineweather.co.nz//incoming/eLocalLarge/WEL20180423PM.png');
-thisAd = 0;
-imgCt = adImages.length;
-animId=0;
+var thisAd = 0;
+var imgCt = adImages.length;
+var animId = 0;
 function rotate()
 {
-	if (document.images)
+	if (adImages)
 	{
+        console.log("this ad " + thisAd + " imgCt " + imgCt)
 		if(thisAd == imgCt)
 		{
 			thisAd = 0;
 		}
-      showChart(thisAd+1);
+        showChart(thisAd+2);
 		animId=setTimeout("rotate()",1000);
-		thisAd++;
+		//thisAd++;
 	}
 }
-animstate=0;
+var animstate = 0;
 function animateChart()
 {
     if(animstate==0)
 	 {
-		animstate=1;
 		MM_swapImage('animbut','','img/animbut2.gif',1);
 		rotate();
 	}
 	else
 	{
 		clearTimeout(animId);
-		animstate=0;
-		MM_swapImage('animbut','','img/animbut.gif',1);
+		MM_swapImage('animbut','','img/animbut.gif',0);
 	}
    //refreshAds();
 }
 //-->
-var currImgNum = 1;
 function showChart(imgNum, showAm)
 {
+    var currImgNum = thisAd + 1;
     document.chartpic.src=adImages[imgNum-1];
     if(imgNum != currImgNum)
 	 {
@@ -121,6 +120,7 @@ function showChart(imgNum, showAm)
         changeClass(imgNum, true)
         currImgNum=imgNum;
         //refreshAds();
+        thisAd = imgNum - 1;
     }
 }
 function MM_swapImage(divid, emptyShit, img, as)
@@ -323,7 +323,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
  var pvar = { cid: "nz-greenroom", content: "0", server: "secure-nz" };
 
@@ -331,7 +331,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
  trac.record().post();
 
-</script>
+</script> -->
 
 <noscript>
 
