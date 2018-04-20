@@ -2,7 +2,7 @@
     <head>
         <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1">
         <link href="awesome.css" rel="stylesheet" id="style">
-        <link href="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif" rel="icon" type="image/gif">
+        <link href="img/mchammer.gif" rel="icon" type="image/gif" id="favicon">
     </head>
 <body>
 
@@ -27,9 +27,9 @@
 
     <center>
         <!-- TRIPLE MC HAMMER -->
-        <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">&nbsp;&nbsp;
-        <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">&nbsp;&nbsp;
-        <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
+        <img src="img/mchammer.gif">&nbsp;&nbsp;
+        <img src="img/mchammer.gif">&nbsp;&nbsp;
+        <img src="img/mchammer.gif">
     </center>
 
     <center>
@@ -169,6 +169,27 @@
 
         });
     });
+
+    // Update our favicon!
+    var favicon = document.getElementById("favicon");
+    var curFrame = 0;
+    var animid = 0;
+    animateFavicon();
+    function animateFavicon()
+    {
+        var frameStr = curFrame;
+        if (frameStr < 10)
+        {
+            frameStr = "0" + frameStr;
+        }
+        favicon.href = "img/mchammer_exploded/mchammer_" + frameStr + ".png"
+        curFrame++;
+        if (curFrame == 80)
+        {
+            curFrame = 0;
+        }
+        animid = setTimeout("animateFavicon();", 100);
+    }
 
   </script>
 
