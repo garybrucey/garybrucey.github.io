@@ -121,6 +121,17 @@
 <!-- Epic Javascript Coding HERE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <!-- Change CSS -->
+  <script type="text/javascript">
+
+    ​$(function(){
+        var num = Math.random() % 219;
+        css = "http://www.csszengarden.com/" + num + "/" + num + ".css";
+        $('link[href="awesome.css"]').attr('href', css);
+        console.log("setting to " + css);
+    }​);
+  </script>
+
   <!-- Get FB posts-->
   <script type="text/javascript">
 
