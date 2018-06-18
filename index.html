@@ -128,6 +128,15 @@
     console.log("CSS " + document.getElementById("style").href);
     $(function(){
         var num = Math.random() * 219;
+        num = num.toFixed(0);
+        if(num < 100)
+        {
+            num = '0' + num;
+        }
+        if(num < 10)
+        {
+            num = '0' + num;
+        }
         var cssHref = "http://www.csszengarden.com/" + num + "/" + num + ".css";
         document.getElementById("style").href = cssHref;
         console.log("setting to " + cssHref);
